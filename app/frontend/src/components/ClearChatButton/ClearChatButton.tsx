@@ -9,6 +9,7 @@ interface Props {
     disabled?: boolean;
 }
 
+/*
 export const ClearChatButton = ({ className, disabled, onClick }: Props) => {
     return (
         <div className={`${styles.container} ${className ?? ""}`}>
@@ -18,3 +19,4 @@ export const ClearChatButton = ({ className, disabled, onClick }: Props) => {
         </div>
     );
 };
+*/

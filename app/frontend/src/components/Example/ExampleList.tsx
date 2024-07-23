@@ -3,9 +3,9 @@ import { Example } from "./Example";
 import styles from "./Example.module.css";
 
 const DEFAULT_EXAMPLES: string[] = [
-    "What is included in my Northwind Health Plus plan that is not in standard?",
-    "What happens in a performance review?",
-    "What does a Product Manager do?"
+    "リフォームで交付申請を出しましたが、どのくらいで審査は終わりますか？",
+    "リフォームの交付申請の入力中である。提出する書類の一覧に「印鑑証明」があったが、これは三か月以内のものなどの確認事項があるか。",
+    "太陽光パネルの設置証明書の提出は必要ですか。"
 ];
 
 const GPT4V_EXAMPLES: string[] = [

@@ -14,21 +14,21 @@ const Layout = () => {
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
                     <Link to="/" className={styles.headerTitleContainer}>
-                        <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3>
+                        <h3 className={styles.headerTitle}>GPT + エンタプライズデータ</h3>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
                             <li>
                                 <NavLink to="/" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
-                                    Chat
+                                    チャット
                                 </NavLink>
                             </li>
                             <li className={styles.headerNavLeftMargin}>
                                 <NavLink to="/qa" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
-                                    Ask a question
+                                    質問する
                                 </NavLink>
                             </li>
-                            <li className={styles.headerNavLeftMargin}>
+                            {/* <li className={styles.headerNavLeftMargin}>
                                 <a href="https://aka.ms/entgptsearch" target={"_blank"} title="Github repository link">
                                     <img
                                         src={github}
@@ -39,10 +39,10 @@ const Layout = () => {
                                         className={styles.githubLogo}
                                     />
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
-                    <h4 className={styles.headerRightText}>Azure OpenAI + AI Search</h4>
+                    {/* <h4 className={styles.headerRightText}>Azure OpenAI + AI Search</h4> */}
                     {useLogin && <LoginButton />}
                 </div>
             </header>

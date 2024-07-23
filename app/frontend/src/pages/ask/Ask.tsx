@@ -8,7 +8,7 @@ import { Answer, AnswerError } from "../../components/Answer";
 import { QuestionInput } from "../../components/QuestionInput";
 import { ExampleList } from "../../components/Example";
 import { AnalysisPanel, AnalysisPanelTabs } from "../../components/AnalysisPanel";
-import { SettingsButton } from "../../components/SettingsButton/SettingsButton";
+//import { SettingsButton } from "../../components/SettingsButton/SettingsButton";
 import { useLogin, getToken, isLoggedIn, requireAccessControl } from "../../authConfig";
 import { VectorSettings } from "../../components/VectorSettings";
 import { GPT4VSettings } from "../../components/GPT4VSettings";
@@ -201,12 +201,11 @@ export function Component(): JSX.Element {
             <div className={styles.askTopSection}>
                 <div className={styles.commandsContainer}>
                     {showUserUpload && <UploadFile className={styles.commandButton} disabled={!isLoggedIn(client)} />}
-                    <SettingsButton className={styles.commandButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
                 </div>
-                <h1 className={styles.askTitle}>Ask your data</h1>
+                <h1 className={styles.askTitle}>データに質問する</h1>
                 <div className={styles.askQuestionInput}>
                     <QuestionInput
-                        placeholder="Example: Does my plan cover annual eye exams?"
+                        placeholder="新しい質問を入力します"
                         disabled={isLoading}
                         initQuestion={question}
                         onSend={question => makeApiRequest(question)}
