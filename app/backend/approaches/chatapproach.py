@@ -17,7 +17,9 @@ class ChatApproach(Approach, ABC):
     ]
     NO_RESPONSE = "0"
 
-    follow_up_questions_prompt_content = """Generate 3 very brief follow-up questions that the user would likely ask next.
+    follow_up_questions_prompt_content = """
+    For the purpose of clarifying the context regarding the user's previous question, 
+    create three brief follow-up questions that the user is likely to ask next
     Enclose the follow-up questions in double angle brackets. Example:
     <<Are there exclusions for prescriptions?>>
     <<Which pharmacies can be ordered from?>>
